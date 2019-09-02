@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num"></input> <br>
+    <button onclick="runGugudan()">입력</button>
+    
+
+    <script>
+            //n을 입력 받는다
+            //for 문을 통해 1-9 구구단을 출력한다.
+            //document에
+            function runGugudan(){
+                var n = document.getElementById("num").value;
+            
+                if(n<2 || n>9){
+                    alert("제대로 입력하세요.")
+                } else {
+                    for(var i=1; i<=9;i++){
+                        document.write(n+"*"+i+"="+(n*i)+"<br/>");}
+                    }
+                }
+        </script>
+    
+</body>
+</html>
